@@ -5,6 +5,8 @@
     "Hey - welcome to the Dealer Inspire Javascript Code challenge. We're glad you're here.",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,7 +15,22 @@
       "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jonathan Powell <jpowell.cr@gmail.com>",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme"
+  "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "prop-types": "^15.6.1",
+    "webpack": "^4.8.1",
+    "webpack-dev-server": "^3.1.4"
+  }
 }
