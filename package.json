@@ -1,0 +1,19 @@
+{
+  "name": "js-behance-api",
+  "version": "1.0.0",
+  "description":
+    "Hey - welcome to the Dealer Inspire Javascript Code challenge. We're glad you're here.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme"
+}
