@@ -5,6 +5,7 @@
     "Hey - welcome to the Dealer Inspire Javascript Code challenge. We're glad you're here.",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && node server.js",
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,9 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme",
   "dependencies": {
+    "colors": "^1.2.4",
+    "express": "^4.16.3",
+    "opn": "^5.3.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2"
   },
@@ -31,6 +35,7 @@
     "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.6.1",
     "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4"
   }
 }
