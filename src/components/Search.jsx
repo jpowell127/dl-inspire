@@ -3,7 +3,7 @@ import TextField from "material-ui/TextField";
 import RaisedButton from "material-ui/RaisedButton";
 import Paper from "material-ui/Paper";
 
-const style = {
+const buttonStyle = {
   margin: 20
 };
 
@@ -16,8 +16,8 @@ const paperStyle = {
 
 const Search = () => (
   <Paper style={paperStyle} zDepth={5} rounded={false}>
-    <TextField id="text-field-default" defaultValue="Search Behance" />
-    <RaisedButton label="Search" secondary={true} style={style} />
+    <TextField id="text-field-default" hintText="Search for Behance Users" />
+    <RaisedButton label="Search" secondary={true} style={buttonStyle} />
   </Paper>
 );
 
