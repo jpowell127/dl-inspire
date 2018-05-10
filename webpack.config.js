@@ -1,6 +1,7 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+
 module.exports = {
-  entry: ["./src/App.jsx"],
+  entry: ["./src/index.jsx"],
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist"
@@ -8,8 +9,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
+        include: __dirname + "/src",
         use: {
           loader: "babel-loader"
         }
@@ -23,6 +25,9 @@ module.exports = {
         ]
       }
     ]
+  },
+  resolve: {
+    extensions: [".js", ".jsx"]
   },
   plugins: [
     new HtmlWebPackPlugin({

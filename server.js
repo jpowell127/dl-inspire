@@ -30,6 +30,11 @@ app.listen(process.env.PORT || 3000, () => {
   console.log("-------------------------  o8o  -------------------------");
   console.log(colors.bold.green("Hi there Dealer Inspire!"));
   console.log(colors.blue("I'm going to launch your favorite browser now."));
+  console.log(
+    colors.bold.green.underline(
+      "http://localhost:" + (process.env.PORT || 3000) + "/"
+    )
+  );
   console.log("-------------------------  o8o  -------------------------");
 
   setTimeout(
