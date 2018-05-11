@@ -12,3 +12,11 @@ body {
 div.description > a {
   word-wrap: break-word;
 }
+
+div.ui.statistic > div.label {
+  font-size: 0.5em !important;
+}
+
+div.ui.menu {
+  border-radius: 0 !important;
+}

@@ -21,7 +21,7 @@ export class UserProjects extends Component {
       body: JSON.stringify({ user: this.props.userId })
     })
       .then(res => res.json())
-      .then(result => result.projects)
+      .then(result => result.projects.slice(0, 5))
       .then(projects => this.setState({ projects, loading: false }))
       .catch(error => this.setState({ errors: error }));
   }
@@ -31,31 +31,34 @@ export class UserProjects extends Component {
     return (
       <Fragment>
         {loading && (
-          <Dimmer active>
-            <Loader size="medium">Loading...</Loader>
-          </Dimmer>
-        )}
-        {projects.length > 0 && (
           <Modal.Content>
-            <Header as="h3" size="medium">
-              Projects
-            </Header>
-            <Item.Group divided>
-              {projects.map(project => (
-                <Item key={project.id}>
-                  <Item.Image size="tiny" src={project.covers[115]} />
-                  <Item.Content>
-                    <Item.Header>
-                      <a href={project.url} target="_blank">
-                        {project.name}
-                      </a>
-                    </Item.Header>
-                  </Item.Content>
-                </Item>
-              ))}
-            </Item.Group>
+            <Dimmer active>
+              <Loader size="medium">Loading...</Loader>
+            </Dimmer>
           </Modal.Content>
         )}
+        {projects &&
+          projects.length > 0 && (
+            <Modal.Content>
+              <Header as="h3" size="large">
+                Projects
+              </Header>
+              <Item.Group divided>
+                {projects.map(project => (
+                  <Item key={project.id}>
+                    <Item.Image size="tiny" src={project.covers[115]} />
+                    <Item.Content>
+                      <Item.Header>
+                        <a href={project.url} target="_blank">
+                          {project.name}
+                        </a>
+                      </Item.Header>
+                    </Item.Content>
+                  </Item>
+                ))}
+              </Item.Group>
+            </Modal.Content>
+          )}
       </Fragment>
     );
   }

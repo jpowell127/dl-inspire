@@ -21,8 +21,16 @@ export class UserWorkExperience extends Component {
       body: JSON.stringify({ user: this.props.username })
     })
       .then(res => res.json())
-      .then(result => result.work_experience)
-      .then(experiences => this.setState({ experiences, loading: false }))
+      .then(experiences => {
+        if (experiences.work_experience) {
+          this.setState({
+            experiences: experiences.work_experience,
+            loading: false
+          });
+        } else {
+          this.setState({ loading: false });
+        }
+      })
       .catch(error => this.setState({ errors: error }));
   }
 
@@ -31,19 +39,21 @@ export class UserWorkExperience extends Component {
     return (
       <Fragment>
         {loading && (
-          <Dimmer active>
-            <Loader size="medium">Loading...</Loader>
-          </Dimmer>
+          <Modal.Content>
+            <Dimmer active>
+              <Loader size="medium">Loading...</Loader>
+            </Dimmer>
+          </Modal.Content>
         )}
         {experiences &&
           experiences.length > 0 && (
             <Modal.Content>
-              <Header as="h3" size="medium">
+              <Header as="h3" size="large">
                 Work Experience
               </Header>
               <Item.Group divided>
-                {experiences.map(experience => (
-                  <Item>
+                {experiences.map((experience, i) => (
+                  <Item key={i}>
                     <Item.Content>
                       <Item.Header>{experience.position}</Item.Header>
                       <Item.Meta>{experience.organization}</Item.Meta>

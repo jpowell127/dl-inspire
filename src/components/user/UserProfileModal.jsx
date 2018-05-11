@@ -2,10 +2,20 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import UserWorkExperience from "./UserWorkExperience";
 import UserProjects from "./UserProjects";
+import UserStats from "./UserStats";
+import UserFollow from "./UserFollow";
 import { Button, Header, Modal, Image, Grid } from "semantic-ui-react";
 
 function UserProfileModal({ user }) {
-  const { id, display_name, username, occupation, company, location } = user;
+  const {
+    id,
+    display_name,
+    username,
+    occupation,
+    company,
+    location,
+    stats
+  } = user;
   const image = user.images[100];
 
   const button = (
@@ -23,13 +33,19 @@ function UserProfileModal({ user }) {
         </Header.Subheader>
         <Header.Subheader size="medium">{location}</Header.Subheader>
       </Header>
-      <Grid columns={2} divided>
+      <Header as="h1" size="huge">
+        <UserStats stats={stats} />
+      </Header>
+      <Grid columns={3} centered padded divided>
         <Grid.Row>
           <Grid.Column>
             <UserProjects userId={id} />
           </Grid.Column>
           <Grid.Column>
             <UserWorkExperience username={username} />
+          </Grid.Column>
+          <Grid.Column>
+            <UserFollow username={username} />
           </Grid.Column>
         </Grid.Row>
       </Grid>
@@ -45,7 +61,8 @@ UserProfileModal.propTypes = {
     occupation: PropTypes.string,
     company: PropTypes.string,
     location: PropTypes.string,
-    images: PropTypes.object.isRequired
+    images: PropTypes.object.isRequired,
+    stats: PropTypes.object.isRequired
   }).isRequired
 };
 

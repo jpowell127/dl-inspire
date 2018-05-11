@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import MenuBar from "./components/MenuBar";
 import UserProfilePreview from "./components/user/UserProfilePreview";
 import { BEHANCE_GET_USER_DATA_LAMBDA_URL } from "../utilities/constants";
-import { Dimmer, Loader, Card } from "semantic-ui-react";
+import { Dimmer, Loader, Card, Message } from "semantic-ui-react";
 
 export class App extends Component {
   constructor() {
@@ -13,26 +13,25 @@ export class App extends Component {
       loading: false,
       searchTerm: "",
       users: [],
-      errors: []
+      errors: [],
+      showMessage: false
     };
-
-    this.handleSearchTermChange = this.handleSearchTermChange.bind(this);
-    this.getUsers = this.getUsers.bind(this);
   }
 
-  handleSearchTermChange(e) {
+  handleSearchTermChange = e => {
     let searchTerm = e.target.value;
 
     this.setState({
-      searchTerm
+      searchTerm,
+      showMessage: false
     });
-  }
+  };
 
-  getUsers() {
+  getUsers = () => {
     const { searchTerm } = this.state;
 
     if (!searchTerm) {
-      this.setState({ users: [] });
+      this.setState({ users: [], showMessage: false });
       return;
     }
 
@@ -44,12 +43,24 @@ export class App extends Component {
     })
       .then(res => res.json())
       .then(result => result.users)
-      .then(users => this.setState({ users, loading: false }))
+      .then(users => {
+        if (users.length > 0) {
+          this.setState({ users, loading: false, showMessage: false });
+        } else {
+          this.setState({ users, loading: false, showMessage: true });
+        }
+      })
       .catch(error => this.setState({ errors: error }));
-  }
+  };
 
   render() {
-    const { users, loading, selectedUser } = this.state;
+    const {
+      users,
+      loading,
+      selectedUser,
+      searchTerm,
+      showMessage
+    } = this.state;
     return (
       <Fragment>
         {loading && (
@@ -61,12 +72,21 @@ export class App extends Component {
           handleSearchTermChange={this.handleSearchTermChange}
           getUsers={this.getUsers}
         />
-        {users.length > 0 && (
-          <Card.Group centered>
-            {users.map(user => (
-              <UserProfilePreview key={user.id} user={user} />
-            ))}
-          </Card.Group>
+        {users &&
+          users.length > 0 && (
+            <Card.Group centered>
+              {users.map(user => (
+                <UserProfilePreview key={user.id} user={user} />
+              ))}
+            </Card.Group>
+          )}
+        {showMessage && (
+          <Message negative>
+            <Message.Header>
+              We're sorry we can't find any users named {searchTerm}
+            </Message.Header>
+            <p>Please try another search</p>
+          </Message>
         )}
       </Fragment>
     );
