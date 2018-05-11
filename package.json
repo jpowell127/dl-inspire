@@ -1,17 +1,19 @@
 {
   "name": "js-behance-api",
   "version": "1.0.0",
-  "description": "Hey - welcome to the Dealer Inspire Javascript Code challenge. We're glad you're here.",
+  "description": "Dealer Inspire Javascript Code challenge",
   "main": "index.js",
   "scripts": {
     "start": "npm run build && node server.js",
     "dev": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:update": "jest -u"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
+    "url":
+      "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
   },
   "keywords": [],
   "author": "Jonathan Powell <jpowell.cr@gmail.com>",
@@ -33,10 +35,12 @@
     "babel-preset-stage-1": "^6.24.1",
     "copy-webpack-plugin": "^4.5.1",
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
     "prop-types": "^15.6.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.8.1",
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4"
