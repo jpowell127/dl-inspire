@@ -12,13 +12,18 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
+    "url": "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
   },
   "keywords": [],
   "author": "Jonathan Powell <jpowell.cr@gmail.com>",
   "license": "ISC",
   "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme",
+  "jest": {
+    "automock": false,
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
   "dependencies": {
     "colors": "^1.2.4",
     "express": "^4.16.3",
@@ -39,6 +44,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^22.4.3",
+    "jest-fetch-mock": "^1.5.0",
     "prop-types": "^15.6.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.8.1",

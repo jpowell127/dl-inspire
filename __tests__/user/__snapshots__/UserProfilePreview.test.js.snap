@@ -1,0 +1,331 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfilePreview renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserProfilePreview
+    user={
+      Object {
+        "display_name": "test-user",
+        "id": 1,
+        "images": Object {},
+        "url": "https://google.com",
+        "username": "testuser",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <CardContent>
+          <Image
+            alt="Image of testuser"
+            as="img"
+            floated="right"
+            size="mini"
+            src={undefined}
+            ui={true}
+          />
+          <CardHeader>
+            test-user
+          </CardHeader>
+          <CardMeta>
+            testuser
+          </CardMeta>
+        </CardContent>,
+        <CardContent
+          extra={true}
+        >
+          <UserProfileModal
+            user={
+              Object {
+                "display_name": "test-user",
+                "id": 1,
+                "images": Object {},
+                "url": "https://google.com",
+                "username": "testuser",
+              }
+            }
+          />
+        </CardContent>,
+      ],
+      "color": "pink",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <Image
+              alt="Image of testuser"
+              as="img"
+              floated="right"
+              size="mini"
+              src={undefined}
+              ui={true}
+            />,
+            <CardHeader>
+              test-user
+            </CardHeader>,
+            <CardMeta>
+              testuser
+            </CardMeta>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "alt": "Image of testuser",
+              "as": "img",
+              "floated": "right",
+              "size": "mini",
+              "src": undefined,
+              "ui": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "test-user",
+            },
+            "ref": null,
+            "rendered": "test-user",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "testuser",
+            },
+            "ref": null,
+            "rendered": "testuser",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <UserProfileModal
+            user={
+              Object {
+                "display_name": "test-user",
+                "id": 1,
+                "images": Object {},
+                "url": "https://google.com",
+                "username": "testuser",
+              }
+            }
+          />,
+          "extra": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "user": Object {
+              "display_name": "test-user",
+              "id": 1,
+              "images": Object {},
+              "url": "https://google.com",
+              "username": "testuser",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <CardContent>
+            <Image
+              alt="Image of testuser"
+              as="img"
+              floated="right"
+              size="mini"
+              src={undefined}
+              ui={true}
+            />
+            <CardHeader>
+              test-user
+            </CardHeader>
+            <CardMeta>
+              testuser
+            </CardMeta>
+          </CardContent>,
+          <CardContent
+            extra={true}
+          >
+            <UserProfileModal
+              user={
+                Object {
+                  "display_name": "test-user",
+                  "id": 1,
+                  "images": Object {},
+                  "url": "https://google.com",
+                  "username": "testuser",
+                }
+              }
+            />
+          </CardContent>,
+        ],
+        "color": "pink",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Image
+                alt="Image of testuser"
+                as="img"
+                floated="right"
+                size="mini"
+                src={undefined}
+                ui={true}
+              />,
+              <CardHeader>
+                test-user
+              </CardHeader>,
+              <CardMeta>
+                testuser
+              </CardMeta>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "alt": "Image of testuser",
+                "as": "img",
+                "floated": "right",
+                "size": "mini",
+                "src": undefined,
+                "ui": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "test-user",
+              },
+              "ref": null,
+              "rendered": "test-user",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "testuser",
+              },
+              "ref": null,
+              "rendered": "testuser",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": <UserProfileModal
+              user={
+                Object {
+                  "display_name": "test-user",
+                  "id": 1,
+                  "images": Object {},
+                  "url": "https://google.com",
+                  "username": "testuser",
+                }
+              }
+            />,
+            "extra": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "user": Object {
+                "display_name": "test-user",
+                "id": 1,
+                "images": Object {},
+                "url": "https://google.com",
+                "username": "testuser",
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

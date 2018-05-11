@@ -1,0 +1,595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserStats renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserStats
+    stats={
+      Object {
+        "appreciations": 1,
+        "comments": 1,
+        "followers": 1,
+        "following": 1,
+        "views": 1,
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <Statistic
+          color="red"
+        >
+          <StatisticValue>
+            1
+          </StatisticValue>
+          <StatisticLabel
+            size="mini"
+          >
+            Followers
+          </StatisticLabel>
+        </Statistic>,
+        <Statistic
+          color="orange"
+        >
+          <StatisticValue>
+            1
+          </StatisticValue>
+          <StatisticLabel>
+            Following
+          </StatisticLabel>
+        </Statistic>,
+        <Statistic
+          color="yellow"
+        >
+          <StatisticValue>
+            1
+          </StatisticValue>
+          <StatisticLabel>
+            Appreciations
+          </StatisticLabel>
+        </Statistic>,
+        <Statistic
+          color="green"
+        >
+          <StatisticValue>
+            1
+          </StatisticValue>
+          <StatisticLabel>
+            Views
+          </StatisticLabel>
+        </Statistic>,
+        <Statistic
+          color="teal"
+        >
+          <StatisticValue>
+            1
+          </StatisticValue>
+          <StatisticLabel>
+            Comments
+          </StatisticLabel>
+        </Statistic>,
+      ],
+      "size": "mini",
+      "widths": "five",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StatisticValue>
+              1
+            </StatisticValue>,
+            <StatisticLabel
+              size="mini"
+            >
+              Followers
+            </StatisticLabel>,
+          ],
+          "color": "red",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Followers",
+              "size": "mini",
+            },
+            "ref": null,
+            "rendered": "Followers",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StatisticValue>
+              1
+            </StatisticValue>,
+            <StatisticLabel>
+              Following
+            </StatisticLabel>,
+          ],
+          "color": "orange",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Following",
+            },
+            "ref": null,
+            "rendered": "Following",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StatisticValue>
+              1
+            </StatisticValue>,
+            <StatisticLabel>
+              Appreciations
+            </StatisticLabel>,
+          ],
+          "color": "yellow",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Appreciations",
+            },
+            "ref": null,
+            "rendered": "Appreciations",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StatisticValue>
+              1
+            </StatisticValue>,
+            <StatisticLabel>
+              Views
+            </StatisticLabel>,
+          ],
+          "color": "green",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Views",
+            },
+            "ref": null,
+            "rendered": "Views",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <StatisticValue>
+              1
+            </StatisticValue>,
+            <StatisticLabel>
+              Comments
+            </StatisticLabel>,
+          ],
+          "color": "teal",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": 1,
+            },
+            "ref": null,
+            "rendered": 1,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Comments",
+            },
+            "ref": null,
+            "rendered": "Comments",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <Statistic
+            color="red"
+          >
+            <StatisticValue>
+              1
+            </StatisticValue>
+            <StatisticLabel
+              size="mini"
+            >
+              Followers
+            </StatisticLabel>
+          </Statistic>,
+          <Statistic
+            color="orange"
+          >
+            <StatisticValue>
+              1
+            </StatisticValue>
+            <StatisticLabel>
+              Following
+            </StatisticLabel>
+          </Statistic>,
+          <Statistic
+            color="yellow"
+          >
+            <StatisticValue>
+              1
+            </StatisticValue>
+            <StatisticLabel>
+              Appreciations
+            </StatisticLabel>
+          </Statistic>,
+          <Statistic
+            color="green"
+          >
+            <StatisticValue>
+              1
+            </StatisticValue>
+            <StatisticLabel>
+              Views
+            </StatisticLabel>
+          </Statistic>,
+          <Statistic
+            color="teal"
+          >
+            <StatisticValue>
+              1
+            </StatisticValue>
+            <StatisticLabel>
+              Comments
+            </StatisticLabel>
+          </Statistic>,
+        ],
+        "size": "mini",
+        "widths": "five",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StatisticValue>
+                1
+              </StatisticValue>,
+              <StatisticLabel
+                size="mini"
+              >
+                Followers
+              </StatisticLabel>,
+            ],
+            "color": "red",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Followers",
+                "size": "mini",
+              },
+              "ref": null,
+              "rendered": "Followers",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StatisticValue>
+                1
+              </StatisticValue>,
+              <StatisticLabel>
+                Following
+              </StatisticLabel>,
+            ],
+            "color": "orange",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Following",
+              },
+              "ref": null,
+              "rendered": "Following",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StatisticValue>
+                1
+              </StatisticValue>,
+              <StatisticLabel>
+                Appreciations
+              </StatisticLabel>,
+            ],
+            "color": "yellow",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Appreciations",
+              },
+              "ref": null,
+              "rendered": "Appreciations",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StatisticValue>
+                1
+              </StatisticValue>,
+              <StatisticLabel>
+                Views
+              </StatisticLabel>,
+            ],
+            "color": "green",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Views",
+              },
+              "ref": null,
+              "rendered": "Views",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <StatisticValue>
+                1
+              </StatisticValue>,
+              <StatisticLabel>
+                Comments
+              </StatisticLabel>,
+            ],
+            "color": "teal",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": 1,
+              },
+              "ref": null,
+              "rendered": 1,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Comments",
+              },
+              "ref": null,
+              "rendered": "Comments",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

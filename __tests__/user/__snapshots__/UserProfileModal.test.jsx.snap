@@ -1,0 +1,726 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserProfileModal renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserProfileModal
+    user={
+      Object {
+        "company": "test co",
+        "display_name": "test-user",
+        "id": 1,
+        "images": Object {},
+        "location": "somewhere",
+        "occupation": "designer",
+        "stats": Object {
+          "appreciations": 1,
+          "comments": 1,
+          "followers": 1,
+          "following": 1,
+          "views": 1,
+        },
+        "username": "testuser",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": Array [
+        <Header
+          as="h1"
+          size="huge"
+        >
+          <Image
+            as="img"
+            floated="right"
+            rounded={true}
+            spaced="right"
+            src={undefined}
+            ui={true}
+          />
+          test-user
+           (aka 
+          testuser
+          )
+          <HeaderSubheader
+            size="medium"
+          >
+            test co
+          </HeaderSubheader>
+          <HeaderSubheader
+            size="medium"
+          >
+            somewhere
+          </HeaderSubheader>
+        </Header>,
+        <Header
+          as="h1"
+          size="huge"
+        >
+          <UserStats
+            stats={
+              Object {
+                "appreciations": 1,
+                "comments": 1,
+                "followers": 1,
+                "following": 1,
+                "views": 1,
+              }
+            }
+          />
+        </Header>,
+        <Grid
+          centered={true}
+          columns={3}
+          divided={true}
+          padded={true}
+        >
+          <GridRow>
+            <GridColumn>
+              <UserProjects
+                userId={1}
+              />
+            </GridColumn>
+            <GridColumn>
+              <UserWorkExperience
+                username="testuser"
+              />
+            </GridColumn>
+            <GridColumn>
+              <UserFollow
+                username="testuser"
+              />
+            </GridColumn>
+          </GridRow>
+        </Grid>,
+      ],
+      "closeIcon": true,
+      "closeOnDimmerClick": true,
+      "closeOnDocumentClick": false,
+      "dimmer": true,
+      "eventPool": "Modal",
+      "trigger": <Button
+        as="button"
+        color="pink"
+        fluid={true}
+        inverted={true}
+        role="button"
+      >
+        View User
+      </Button>,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "h1",
+          "children": Array [
+            <Image
+              as="img"
+              floated="right"
+              rounded={true}
+              spaced="right"
+              src={undefined}
+              ui={true}
+            />,
+            "test-user",
+            " (aka ",
+            "testuser",
+            ")",
+            <HeaderSubheader
+              size="medium"
+            >
+              test co
+            </HeaderSubheader>,
+            <HeaderSubheader
+              size="medium"
+            >
+              somewhere
+            </HeaderSubheader>,
+          ],
+          "size": "huge",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "as": "img",
+              "floated": "right",
+              "rounded": true,
+              "spaced": "right",
+              "src": undefined,
+              "ui": true,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "test-user",
+          " (aka ",
+          "testuser",
+          ")",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "test co",
+              "size": "medium",
+            },
+            "ref": null,
+            "rendered": "test co",
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "somewhere",
+              "size": "medium",
+            },
+            "ref": null,
+            "rendered": "somewhere",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "as": "h1",
+          "children": <UserStats
+            stats={
+              Object {
+                "appreciations": 1,
+                "comments": 1,
+                "followers": 1,
+                "following": 1,
+                "views": 1,
+              }
+            }
+          />,
+          "size": "huge",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "stats": Object {
+              "appreciations": 1,
+              "comments": 1,
+              "followers": 1,
+              "following": 1,
+              "views": 1,
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "centered": true,
+          "children": <GridRow>
+            <GridColumn>
+              <UserProjects
+                userId={1}
+              />
+            </GridColumn>
+            <GridColumn>
+              <UserWorkExperience
+                username="testuser"
+              />
+            </GridColumn>
+            <GridColumn>
+              <UserFollow
+                username="testuser"
+              />
+            </GridColumn>
+          </GridRow>,
+          "columns": 3,
+          "divided": true,
+          "padded": true,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <GridColumn>
+                <UserProjects
+                  userId={1}
+                />
+              </GridColumn>,
+              <GridColumn>
+                <UserWorkExperience
+                  username="testuser"
+                />
+              </GridColumn>,
+              <GridColumn>
+                <UserFollow
+                  username="testuser"
+                />
+              </GridColumn>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <UserProjects
+                  userId={1}
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "userId": 1,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <UserWorkExperience
+                  username="testuser"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "username": "testuser",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": <UserFollow
+                  username="testuser"
+                />,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "username": "testuser",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": Array [
+          <Header
+            as="h1"
+            size="huge"
+          >
+            <Image
+              as="img"
+              floated="right"
+              rounded={true}
+              spaced="right"
+              src={undefined}
+              ui={true}
+            />
+            test-user
+             (aka 
+            testuser
+            )
+            <HeaderSubheader
+              size="medium"
+            >
+              test co
+            </HeaderSubheader>
+            <HeaderSubheader
+              size="medium"
+            >
+              somewhere
+            </HeaderSubheader>
+          </Header>,
+          <Header
+            as="h1"
+            size="huge"
+          >
+            <UserStats
+              stats={
+                Object {
+                  "appreciations": 1,
+                  "comments": 1,
+                  "followers": 1,
+                  "following": 1,
+                  "views": 1,
+                }
+              }
+            />
+          </Header>,
+          <Grid
+            centered={true}
+            columns={3}
+            divided={true}
+            padded={true}
+          >
+            <GridRow>
+              <GridColumn>
+                <UserProjects
+                  userId={1}
+                />
+              </GridColumn>
+              <GridColumn>
+                <UserWorkExperience
+                  username="testuser"
+                />
+              </GridColumn>
+              <GridColumn>
+                <UserFollow
+                  username="testuser"
+                />
+              </GridColumn>
+            </GridRow>
+          </Grid>,
+        ],
+        "closeIcon": true,
+        "closeOnDimmerClick": true,
+        "closeOnDocumentClick": false,
+        "dimmer": true,
+        "eventPool": "Modal",
+        "trigger": <Button
+          as="button"
+          color="pink"
+          fluid={true}
+          inverted={true}
+          role="button"
+        >
+          View User
+        </Button>,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "h1",
+            "children": Array [
+              <Image
+                as="img"
+                floated="right"
+                rounded={true}
+                spaced="right"
+                src={undefined}
+                ui={true}
+              />,
+              "test-user",
+              " (aka ",
+              "testuser",
+              ")",
+              <HeaderSubheader
+                size="medium"
+              >
+                test co
+              </HeaderSubheader>,
+              <HeaderSubheader
+                size="medium"
+              >
+                somewhere
+              </HeaderSubheader>,
+            ],
+            "size": "huge",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "as": "img",
+                "floated": "right",
+                "rounded": true,
+                "spaced": "right",
+                "src": undefined,
+                "ui": true,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "test-user",
+            " (aka ",
+            "testuser",
+            ")",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "test co",
+                "size": "medium",
+              },
+              "ref": null,
+              "rendered": "test co",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "somewhere",
+                "size": "medium",
+              },
+              "ref": null,
+              "rendered": "somewhere",
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "as": "h1",
+            "children": <UserStats
+              stats={
+                Object {
+                  "appreciations": 1,
+                  "comments": 1,
+                  "followers": 1,
+                  "following": 1,
+                  "views": 1,
+                }
+              }
+            />,
+            "size": "huge",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "stats": Object {
+                "appreciations": 1,
+                "comments": 1,
+                "followers": 1,
+                "following": 1,
+                "views": 1,
+              },
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "centered": true,
+            "children": <GridRow>
+              <GridColumn>
+                <UserProjects
+                  userId={1}
+                />
+              </GridColumn>
+              <GridColumn>
+                <UserWorkExperience
+                  username="testuser"
+                />
+              </GridColumn>
+              <GridColumn>
+                <UserFollow
+                  username="testuser"
+                />
+              </GridColumn>
+            </GridRow>,
+            "columns": 3,
+            "divided": true,
+            "padded": true,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <GridColumn>
+                  <UserProjects
+                    userId={1}
+                  />
+                </GridColumn>,
+                <GridColumn>
+                  <UserWorkExperience
+                    username="testuser"
+                  />
+                </GridColumn>,
+                <GridColumn>
+                  <UserFollow
+                    username="testuser"
+                  />
+                </GridColumn>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <UserProjects
+                    userId={1}
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "userId": 1,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <UserWorkExperience
+                    username="testuser"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "username": "testuser",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <UserFollow
+                    username="testuser"
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "username": "testuser",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
