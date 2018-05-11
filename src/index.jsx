@@ -72,7 +72,7 @@ export class App extends Component {
           handleSearchTermChange={this.handleSearchTermChange}
           getUsers={this.getUsers}
         />
-        {users &&
+        {!loading &&
           users.length > 0 && (
             <Card.Group centered>
               {users.map(user => (

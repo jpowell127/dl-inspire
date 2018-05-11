@@ -9,7 +9,7 @@ body {
   background-size: cover;
 }
 
-div.description > a {
+div.header > a {
   word-wrap: break-word;
 }
 

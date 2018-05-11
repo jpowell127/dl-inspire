@@ -4,19 +4,17 @@ import { Input, Button } from "semantic-ui-react";
 
 function Search({ getUsers, handleSearchTermChange }) {
   return (
-    <div>
-      <Input
-        inverted
-        size="large"
-        action={{
-          color: "pink",
-          icon: "search",
-          onClick: getUsers
-        }}
-        placeholder="Search Behance"
-        onChange={handleSearchTermChange}
-      />
-    </div>
+    <Input
+      inverted
+      size="large"
+      action={{
+        color: "pink",
+        icon: "search",
+        onClick: getUsers
+      }}
+      placeholder="Search Behance"
+      onChange={handleSearchTermChange}
+    />
   );
 }
 

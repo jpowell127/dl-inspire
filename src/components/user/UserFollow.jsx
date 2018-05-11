@@ -43,31 +43,50 @@ export class UserFollow extends Component {
   }
 
   render() {
-    const { followers, followings, loading } = this.state;
+    const { followers, following, loading } = this.state;
 
     const panes = [
       {
         menuItem: "Followers",
-        render: () => {
+        render: () => (
           <Tab.Pane>
             <Item.Group>
-              {followers.map(follower => {
-                return (
-                  <Item key={follower.id}>
-                    <Item.Image size="tiny" src={follower.images[50]} />
-                    <Item.Content>
-                      <Item.Header>{follower.display_name}</Item.Header>
-                    </Item.Content>
-                  </Item>
-                );
-              })}
+              {followers.map(follower => (
+                <Item key={follower.id}>
+                  <Item.Image size="mini" src={follower.images[50]} />
+                  <Item.Content>
+                    <Item.Header>
+                      <a href={follower.url} target="_blank">
+                        {follower.display_name}
+                      </a>
+                    </Item.Header>
+                  </Item.Content>
+                </Item>
+              ))}
             </Item.Group>
-          </Tab.Pane>;
-        }
+          </Tab.Pane>
+        )
       },
       {
         menuItem: "Following",
-        render: () => <Tab.Pane>Tab 2 Content</Tab.Pane>
+        render: () => (
+          <Tab.Pane>
+            <Item.Group>
+              {following.map(follow => (
+                <Item key={follow.id}>
+                  <Item.Image size="mini" src={follow.images[50]} />
+                  <Item.Content>
+                    <Item.Header>
+                      <a href={follow.url} target="_blank">
+                        {follow.display_name}
+                      </a>
+                    </Item.Header>
+                  </Item.Content>
+                </Item>
+              ))}
+            </Item.Group>
+          </Tab.Pane>
+        )
       }
     ];
 
@@ -80,7 +99,7 @@ export class UserFollow extends Component {
             </Dimmer>
           </Modal.Content>
         )}
-        <Tab panes={panes} />
+        {!loading && <Tab panes={panes} />}
       </Fragment>
     );
   }

@@ -45,25 +45,27 @@ export class UserWorkExperience extends Component {
             </Dimmer>
           </Modal.Content>
         )}
-        {experiences &&
-          experiences.length > 0 && (
-            <Modal.Content>
-              <Header as="h3" size="large">
-                Work Experience
-              </Header>
-              <Item.Group divided>
-                {experiences.map((experience, i) => (
-                  <Item key={i}>
-                    <Item.Content>
-                      <Item.Header>{experience.position}</Item.Header>
-                      <Item.Meta>{experience.organization}</Item.Meta>
-                      <Item.Meta>{experience.location}</Item.Meta>
-                    </Item.Content>
-                  </Item>
-                ))}
-              </Item.Group>
-            </Modal.Content>
-          )}
+        {!loading && (
+          <Modal.Content>
+            <Header as="h3" size="large">
+              Work Experience
+            </Header>
+            {experiences &&
+              experiences.length > 0 && (
+                <Item.Group divided>
+                  {experiences.map((experience, i) => (
+                    <Item key={i}>
+                      <Item.Content>
+                        <Item.Header>{experience.position}</Item.Header>
+                        <Item.Meta>{experience.organization}</Item.Meta>
+                        <Item.Meta>{experience.location}</Item.Meta>
+                      </Item.Content>
+                    </Item>
+                  ))}
+                </Item.Group>
+              )}
+          </Modal.Content>
+        )}
       </Fragment>
     );
   }
