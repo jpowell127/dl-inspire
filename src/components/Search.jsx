@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Input, Button } from "semantic-ui-react";
 
 function Search({ getUsers, handleSearchTermChange }) {
@@ -12,11 +13,16 @@ function Search({ getUsers, handleSearchTermChange }) {
           icon: "search",
           onClick: getUsers
         }}
-        placeholder="Search for Behance Users"
+        placeholder="Search Behance"
         onChange={handleSearchTermChange}
       />
     </div>
   );
 }
+
+Search.propTypes = {
+  getUsers: PropTypes.func.isRequired,
+  handleSearchTermChange: PropTypes.func.isRequired
+};
 
 export default Search;
