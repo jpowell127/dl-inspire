@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Button, Card, Image } from "semantic-ui-react";
 import UserProfileModal from "./UserProfileModal";
 
-function UserProfilePreview({ user }) {
+export default function UserProfilePreview({ user }) {
   const { display_name, username, url, id } = user;
   const image = user.images[50];
 
@@ -44,5 +44,3 @@ UserProfileModal.propTypes = {
     }).isRequired
   }).isRequired
 };
-
-export default UserProfilePreview;

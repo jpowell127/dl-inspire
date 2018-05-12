@@ -6,7 +6,7 @@ import UserStats from "./UserStats";
 import UserFollow from "./UserFollow";
 import { Button, Header, Modal, Image, Grid } from "semantic-ui-react";
 
-function UserProfileModal({ user }) {
+export default function UserProfileModal({ user }) {
   const {
     id,
     display_name,
@@ -72,5 +72,3 @@ UserProfileModal.propTypes = {
     }).isRequired
   }).isRequired
 };
-
-export default UserProfileModal;

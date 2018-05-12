@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { BEHANCE_GET_USER_WORK_EXPERIENCE_LAMBDA_URL } from "../../utilities/constants";
 import { Dimmer, Loader, Modal, Header, Item } from "semantic-ui-react";
 
-export class UserWorkExperience extends Component {
+export default class UserWorkExperience extends Component {
   state = {
     loading: false,
     experiences: []
@@ -71,5 +71,3 @@ export class UserWorkExperience extends Component {
 UserWorkExperience.propTypes = {
   username: PropTypes.string.isRequired
 };
-
-export default UserWorkExperience;

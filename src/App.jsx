@@ -5,7 +5,7 @@ import UserProfilePreview from "./components/user/UserProfilePreview";
 import { BEHANCE_GET_USER_DATA_LAMBDA_URL } from "./utilities/constants";
 import { Dimmer, Loader, Card, Message } from "semantic-ui-react";
 
-export class App extends Component {
+export default class App extends Component {
   state = {
     loading: false,
     searchTerm: "",
@@ -91,5 +91,3 @@ export class App extends Component {
 }
 
 ReactDOM.render(<App />, document.getElementById("app"));
-
-export default App;

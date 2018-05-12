@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { BEHANCE_GET_USER_PROJECTS_LAMBDA_URL } from "../../utilities/constants";
 import { Dimmer, Loader, Modal, Header, Item } from "semantic-ui-react";
 
-export class UserProjects extends Component {
+export default class UserProjects extends Component {
   state = {
     loading: false,
     projects: []
@@ -65,5 +65,3 @@ export class UserProjects extends Component {
 UserProjects.propTypes = {
   userId: PropTypes.number.isRequired
 };
-
-export default UserProjects;

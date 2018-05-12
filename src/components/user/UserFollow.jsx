@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { BEHANCE_GET_USER_FOLLOW_LAMBDA_URL } from "../../utilities/constants";
 import { Dimmer, Loader, Modal, Header, Item, Tab } from "semantic-ui-react";
 
-export class UserFollow extends Component {
+export default class UserFollow extends Component {
   state = {
     loading: false,
     followers: [],
@@ -104,5 +104,3 @@ export class UserFollow extends Component {
 UserFollow.propTypes = {
   username: PropTypes.string.isRequired
 };
-
-export default UserFollow;

@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import { Statistic } from "semantic-ui-react";
 
-function UserStats({ stats }) {
+export default function UserStats({ stats }) {
   const { followers, following, appreciations, views, comments } = stats;
 
   return (
@@ -40,5 +40,3 @@ UserStats.propTypes = {
     comments: PropTypes.number.isRequired
   }).isRequired
 };
-
-export default UserStats;
