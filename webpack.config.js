@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 // HtmlWebpackPlugin will generate an index.html file in our output directory
-// based on our index.html with the link to index_bundle.js inserted for us
+// based on our index.html with the link to bundle.js inserted for us
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 // copies public directory to output directory
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -9,7 +9,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const UglifyJSPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
-  entry: ["./src/index.jsx"],
+  entry: ["./src/App.jsx"],
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist"

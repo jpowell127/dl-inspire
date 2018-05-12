@@ -2,7 +2,7 @@
   "name": "js-behance-api",
   "version": "1.0.0",
   "description": "Dealer Inspire Javascript Code challenge",
-  "main": "index.js",
+  "main": "App.jsx",
   "scripts": {
     "start": "npm run build && node server.js",
     "dev": "webpack-dev-server --open --mode development",
@@ -12,21 +12,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
+    "url":
+      "git+https://jpowell0127@bitbucket.org/dealerinspire/js-behance-api.git"
   },
   "keywords": [],
   "author": "Jonathan Powell <jpowell.cr@gmail.com>",
   "license": "ISC",
   "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme",
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/__tests__/mocks/"
-    ],
+    "testPathIgnorePatterns": ["/node_modules/", "/__tests__/mocks/"],
     "automock": false,
-    "setupFiles": [
-      "./setupJest.js"
-    ]
+    "setupFiles": ["./setupJest.js"]
   },
   "dependencies": {
     "colors": "^1.2.4",
