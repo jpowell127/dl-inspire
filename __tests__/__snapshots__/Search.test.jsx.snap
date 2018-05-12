@@ -6,11 +6,11 @@ exports[`Search renders correctly 1`] = `
     Object {
       "color": "pink",
       "icon": "search",
-      "onClick": [Function],
+      "onClick": [MockFunction],
     }
   }
   inverted={true}
-  onChange={[Function]}
+  onChange={[MockFunction]}
   placeholder="Search Behance"
   size="large"
   type="text"

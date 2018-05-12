@@ -1,14 +1,13 @@
 import React from "react";
 import Search from "../src/components/Search";
-import { shallow, configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-configure({ adapter: new Adapter() });
-
 test("Search renders correctly", () => {
-  const component = shallow(
-    <Search getUsers={() => {}} handleSearchTermChange={() => {}} />
-  );
+  const props = {
+    getUsers: jest.fn(),
+    handleSearchTermChange: jest.fn()
+  };
+  const component = shallow(<Search {...props} />);
   expect(toJson(component)).toMatchSnapshot();
 });

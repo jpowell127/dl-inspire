@@ -19,6 +19,10 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/dealerinspire/js-behance-api#readme",
   "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/mocks/"
+    ],
     "automock": false,
     "setupFiles": [
       "./setupJest.js"

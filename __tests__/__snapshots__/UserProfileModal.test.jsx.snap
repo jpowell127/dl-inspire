@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UserProfileModal/> renders correctly 1`] = `
+<UserProfileModal
+  user={
+    Object {
+      "city": "",
+      "company": "",
+      "country": "",
+      "created_on": 0,
+      "display_name": "",
+      "fields": Array [],
+      "first_name": "",
+      "has_default_image": 0,
+      "id": 12345,
+      "images": Object {},
+      "last_name": "",
+      "location": "",
+      "occupation": "",
+      "state": "",
+      "stats": Object {
+        "appreciations": 0,
+        "comments": 0,
+        "followers": 0,
+        "following": 0,
+        "views": 0,
+      },
+      "url": "",
+      "username": "",
+      "website": "",
+    }
+  }
+>
+  <Modal
+    closeIcon={true}
+    closeOnDimmerClick={true}
+    closeOnDocumentClick={false}
+    dimmer={true}
+    eventPool="Modal"
+    trigger={
+      <Button
+        as="button"
+        color="pink"
+        fluid={true}
+        inverted={true}
+        role="button"
+      >
+        View User
+      </Button>
+    }
+  >
+    <Portal
+      className="ui page modals dimmer transition visible active"
+      closeOnDocumentClick={false}
+      closeOnEscape={true}
+      closeOnRootNodeClick={true}
+      eventPool="Modal"
+      mountNode={<body />}
+      onClose={[Function]}
+      onMount={[Function]}
+      onOpen={[Function]}
+      onUnmount={[Function]}
+      openOnTriggerClick={true}
+      trigger={
+        <Button
+          as="button"
+          color="pink"
+          fluid={true}
+          inverted={true}
+          role="button"
+        >
+          View User
+        </Button>
+      }
+    >
+      <Ref
+        innerRef={[Function]}
+      >
+        <Button
+          as="button"
+          color="pink"
+          fluid={true}
+          inverted={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          role="button"
+        >
+          <button
+            className="ui pink fluid inverted button"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            role="button"
+          >
+            View User
+          </button>
+        </Button>
+      </Ref>
+    </Portal>
+  </Modal>
+</UserProfileModal>
+`;

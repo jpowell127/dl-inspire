@@ -4,15 +4,11 @@ import { BEHANCE_GET_USER_FOLLOW_LAMBDA_URL } from "../../../utilities/constants
 import { Dimmer, Loader, Modal, Header, Item, Tab } from "semantic-ui-react";
 
 export class UserFollow extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: false,
-      followers: [],
-      following: []
-    };
-  }
+  state = {
+    loading: false,
+    followers: [],
+    following: []
+  };
 
   getUserFollow = (username, field) => {
     this.setState({ loading: true });

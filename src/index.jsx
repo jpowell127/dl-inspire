@@ -6,17 +6,13 @@ import { BEHANCE_GET_USER_DATA_LAMBDA_URL } from "../utilities/constants";
 import { Dimmer, Loader, Card, Message } from "semantic-ui-react";
 
 export class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      loading: false,
-      searchTerm: "",
-      users: [],
-      errors: [],
-      showMessage: false
-    };
-  }
+  state = {
+    loading: false,
+    searchTerm: "",
+    users: [],
+    errors: [],
+    showMessage: false
+  };
 
   handleSearchTermChange = e => {
     let searchTerm = e.target.value;
@@ -61,6 +57,7 @@ export class App extends Component {
       searchTerm,
       showMessage
     } = this.state;
+
     return (
       <Fragment>
         {loading && (

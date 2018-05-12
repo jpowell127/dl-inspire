@@ -4,14 +4,10 @@ import { BEHANCE_GET_USER_WORK_EXPERIENCE_LAMBDA_URL } from "../../../utilities/
 import { Dimmer, Loader, Modal, Header, Item } from "semantic-ui-react";
 
 export class UserWorkExperience extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: false,
-      experiences: []
-    };
-  }
+  state = {
+    loading: false,
+    experiences: []
+  };
 
   componentDidMount() {
     this.setState({ loading: true });
@@ -36,6 +32,7 @@ export class UserWorkExperience extends Component {
 
   render() {
     const { experiences, loading } = this.state;
+
     return (
       <Fragment>
         {loading && (

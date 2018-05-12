@@ -4,14 +4,10 @@ import { BEHANCE_GET_USER_PROJECTS_LAMBDA_URL } from "../../../utilities/constan
 import { Dimmer, Loader, Modal, Header, Item } from "semantic-ui-react";
 
 export class UserProjects extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      loading: false,
-      projects: []
-    };
-  }
+  state = {
+    loading: false,
+    projects: []
+  };
 
   componentDidMount() {
     this.setState({ loading: true });

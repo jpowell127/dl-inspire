@@ -6,6 +6,7 @@ import UserProfileModal from "./UserProfileModal";
 function UserProfilePreview({ user }) {
   const { display_name, username, url, id } = user;
   const image = user.images[50];
+
   return (
     <Card color="pink">
       <Card.Content>
@@ -25,13 +26,22 @@ function UserProfilePreview({ user }) {
   );
 }
 
-UserProfilePreview.propTypes = {
+UserProfileModal.propTypes = {
   user: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     display_name: PropTypes.string.isRequired,
     username: PropTypes.string.isRequired,
-    url: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
-    images: PropTypes.object.isRequired
+    occupation: PropTypes.string,
+    company: PropTypes.string,
+    location: PropTypes.string,
+    images: PropTypes.object.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      following: PropTypes.number.isRequired,
+      appreciations: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      comments: PropTypes.number.isRequired
+    }).isRequired
   }).isRequired
 };
 

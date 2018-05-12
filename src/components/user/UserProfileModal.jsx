@@ -23,6 +23,7 @@ function UserProfileModal({ user }) {
       View User
     </Button>
   );
+
   return (
     <Modal closeIcon trigger={button}>
       <Header as="h1" size="huge">
@@ -62,7 +63,13 @@ UserProfileModal.propTypes = {
     company: PropTypes.string,
     location: PropTypes.string,
     images: PropTypes.object.isRequired,
-    stats: PropTypes.object.isRequired
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      following: PropTypes.number.isRequired,
+      appreciations: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      comments: PropTypes.number.isRequired
+    }).isRequired
   }).isRequired
 };
 
