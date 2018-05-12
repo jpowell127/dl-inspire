@@ -8,4 +8,5 @@ test("<UserProfileModal/> renders correctly", () => {
   const component = mount(<UserProfileModal user={MockUser} />);
   expect(component.props().user).toBe(MockUser);
   expect(toJson(component)).toMatchSnapshot();
+  component.unmount();
 });
