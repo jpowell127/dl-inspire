@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Input, Button } from "semantic-ui-react";
 
-export default function Search({ getUsers, handleSearchTermChange }) {
+export default function Search({
+  getUsers,
+  handleSearchTermChange,
+  onKeyPress
+}) {
   return (
     <Input
       inverted
@@ -14,6 +18,7 @@ export default function Search({ getUsers, handleSearchTermChange }) {
       }}
       placeholder="Search Behance"
       onChange={handleSearchTermChange}
+      onKeyPress={onKeyPress}
     />
   );
 }

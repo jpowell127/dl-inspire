@@ -14,6 +14,12 @@ export default class App extends Component {
     showMessage: false
   };
 
+  onKeyPress = e => {
+    if (e.key === "Enter") {
+      this.getUsers();
+    }
+  };
+
   handleSearchTermChange = e => {
     let searchTerm = e.target.value;
 
@@ -68,6 +74,7 @@ export default class App extends Component {
         <MenuBar
           handleSearchTermChange={this.handleSearchTermChange}
           getUsers={this.getUsers}
+          onKeyPress={this.onKeyPress}
         />
         {!loading &&
           users.length > 0 && (
