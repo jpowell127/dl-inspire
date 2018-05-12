@@ -25,5 +25,6 @@ export default function Search({
 
 Search.propTypes = {
   getUsers: PropTypes.func.isRequired,
-  handleSearchTermChange: PropTypes.func.isRequired
+  handleSearchTermChange: PropTypes.func.isRequired,
+  onKeyPress: PropTypes.func.isRequired
 };

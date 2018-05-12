@@ -31,5 +31,6 @@ export default function MenuBar({
 
 Search.MenuBar = {
   getUsers: PropTypes.func.isRequired,
-  handleSearchTermChange: PropTypes.func.isRequired
+  handleSearchTermChange: PropTypes.func.isRequired,
+  onKeyPress: PropTypes.func.isRequired
 };
