@@ -1,9 +1,10 @@
 import React from "react";
+import UserWorkExperience from "../../src/components/user/UserWorkExperience";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
+import toJson from "enzyme-to-json";
 
-import UserWorkExperience from "../../src/components/user/UserWorkExperience";
+configure({ adapter: new Adapter() });
 
 test("UserWorkExperience renders correctly", () => {
   const username = "a-r-t-e-m";

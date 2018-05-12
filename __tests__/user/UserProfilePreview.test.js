@@ -1,9 +1,10 @@
 import React from "react";
+import UserProfilePreview from "../../src/components/user/UserProfilePreview";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
+import toJson from "enzyme-to-json";
 
-import UserProfilePreview from "../../src/components/user/UserProfilePreview";
+configure({ adapter: new Adapter() });
 
 const user = {
   display_name: "test-user",
@@ -15,5 +16,5 @@ const user = {
 
 test("UserProfilePreview renders correctly", () => {
   const component = shallow(<UserProfilePreview user={user} />);
-  expect(component).toMatchSnapshot();
+  expect(toJson(component)).toMatchSnapshot();
 });

@@ -1,12 +1,13 @@
 import React from "react";
+import UserFollow from "../../src/components/user/UserFollow";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
+import toJson from "enzyme-to-json";
 
-import UserFollow from "../../src/components/user/UserFollow";
+configure({ adapter: new Adapter() });
 
 test("UserFollow renders correctly", () => {
   const username = "a-r-t-e-m";
   const component = shallow(<UserFollow username={username} />);
-  expect(component).toMatchSnapshot();
+  expect(toJson(component)).toMatchSnapshot();
 });

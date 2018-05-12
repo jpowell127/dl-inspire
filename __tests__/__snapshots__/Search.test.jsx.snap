@@ -1,68 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Search renders correctly 1`] = `
-ShallowWrapper {
-  "length": 1,
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Search
-    getUsers={[Function]}
-    handleSearchTermChange={[Function]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "class",
-    "props": Object {
-      "action": Object {
-        "color": "pink",
-        "icon": "search",
-        "onClick": [Function],
-      },
-      "inverted": true,
-      "onChange": [Function],
-      "placeholder": "Search Behance",
-      "size": "large",
-      "type": "text",
-    },
-    "ref": null,
-    "rendered": null,
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
+<Input
+  action={
     Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "action": Object {
-          "color": "pink",
-          "icon": "search",
-          "onClick": [Function],
-        },
-        "inverted": true,
-        "onChange": [Function],
-        "placeholder": "Search Behance",
-        "size": "large",
-        "type": "text",
-      },
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-      },
-    },
-  },
-}
+      "color": "pink",
+      "icon": "search",
+      "onClick": [Function],
+    }
+  }
+  inverted={true}
+  onChange={[Function]}
+  placeholder="Search Behance"
+  size="large"
+  type="text"
+/>
 `;

@@ -1,9 +1,10 @@
 import React from "react";
+import UserStats from "../../src/components/user/UserStats";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
+import toJson from "enzyme-to-json";
 
-import UserStats from "../../src/components/user/UserStats";
+configure({ adapter: new Adapter() });
 
 test("UserStats renders correctly", () => {
   const stats = {
@@ -15,5 +16,5 @@ test("UserStats renders correctly", () => {
   };
 
   const component = shallow(<UserStats stats={stats} />);
-  expect(component).toMatchSnapshot();
+  expect(toJson(component)).toMatchSnapshot();
 });

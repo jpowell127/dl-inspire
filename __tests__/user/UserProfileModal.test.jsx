@@ -1,9 +1,10 @@
 import React from "react";
+import UserProfileModal from "../../src/components/user/UserProfileModal";
 import { shallow, configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
-configure({ adapter: new Adapter() });
+import toJson from "enzyme-to-json";
 
-import UserProfileModal from "../../src/components/user/UserProfileModal";
+configure({ adapter: new Adapter() });
 
 test("UserProfileModal renders correctly", () => {
   const user = {
@@ -23,5 +24,5 @@ test("UserProfileModal renders correctly", () => {
     }
   };
   const component = shallow(<UserProfileModal user={user} />);
-  expect(component).toMatchSnapshot();
+  expect(toJson(component)).toMatchSnapshot();
 });
