@@ -1,5 +1,5 @@
 import React from "react";
-import UserProjects from "../src/components/user/UserProjects";
+import UserProjects from "../components/user/UserProjects";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 

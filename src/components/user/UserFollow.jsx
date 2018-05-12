@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import { BEHANCE_GET_USER_FOLLOW_LAMBDA_URL } from "../../../utilities/constants";
+import { BEHANCE_GET_USER_FOLLOW_LAMBDA_URL } from "../../utilities/constants";
 import { Dimmer, Loader, Modal, Header, Item, Tab } from "semantic-ui-react";
 
 export class UserFollow extends Component {

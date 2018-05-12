@@ -2,7 +2,7 @@ import React, { Component, Fragment } from "react";
 import ReactDOM from "react-dom";
 import MenuBar from "./components/MenuBar";
 import UserProfilePreview from "./components/user/UserProfilePreview";
-import { BEHANCE_GET_USER_DATA_LAMBDA_URL } from "../utilities/constants";
+import { BEHANCE_GET_USER_DATA_LAMBDA_URL } from "./utilities/constants";
 import { Dimmer, Loader, Card, Message } from "semantic-ui-react";
 
 export class App extends Component {

@@ -1,5 +1,5 @@
 import React from "react";
-import UserStats from "../src/components/user/UserStats";
+import UserStats from "../components/user/UserStats";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 

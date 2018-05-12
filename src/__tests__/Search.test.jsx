@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../src/components/Search";
+import Search from "../components/Search";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 

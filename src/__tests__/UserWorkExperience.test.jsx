@@ -1,5 +1,5 @@
 import React from "react";
-import UserWorkExperience from "../src/components/user/UserWorkExperience";
+import UserWorkExperience from "../components/user/UserWorkExperience";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 

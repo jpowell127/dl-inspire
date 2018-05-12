@@ -1,5 +1,5 @@
 import React from "react";
-import UserFollow from "../src/components/user/UserFollow";
+import UserFollow from "../components/user/UserFollow";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
