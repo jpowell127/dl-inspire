@@ -1,61 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserStats renders correctly 1`] = `
-<StatisticGroup
-  size="mini"
-  widths="five"
+exports[`<UserStats /> renders correctly 1`] = `
+<UserStats
+  stats={
+    Object {
+      "appreciations": 1,
+      "comments": 1,
+      "followers": 1,
+      "following": 1,
+      "views": 1,
+    }
+  }
 >
-  <Statistic
-    color="red"
+  <StatisticGroup
+    size="mini"
+    widths="five"
   >
-    <StatisticValue>
-      1
-    </StatisticValue>
-    <StatisticLabel
-      size="mini"
+    <div
+      className="ui mini five statistics"
     >
-      Followers
-    </StatisticLabel>
-  </Statistic>
-  <Statistic
-    color="orange"
-  >
-    <StatisticValue>
-      1
-    </StatisticValue>
-    <StatisticLabel>
-      Following
-    </StatisticLabel>
-  </Statistic>
-  <Statistic
-    color="yellow"
-  >
-    <StatisticValue>
-      1
-    </StatisticValue>
-    <StatisticLabel>
-      Appreciations
-    </StatisticLabel>
-  </Statistic>
-  <Statistic
-    color="green"
-  >
-    <StatisticValue>
-      1
-    </StatisticValue>
-    <StatisticLabel>
-      Views
-    </StatisticLabel>
-  </Statistic>
-  <Statistic
-    color="teal"
-  >
-    <StatisticValue>
-      1
-    </StatisticValue>
-    <StatisticLabel>
-      Comments
-    </StatisticLabel>
-  </Statistic>
-</StatisticGroup>
+      <Statistic
+        color="red"
+      >
+        <div
+          className="ui red statistic"
+        >
+          <StatisticValue>
+            <div
+              className="value"
+            >
+              1
+            </div>
+          </StatisticValue>
+          <StatisticLabel
+            size="mini"
+          >
+            <div
+              className="label"
+              size="mini"
+            >
+              Followers
+            </div>
+          </StatisticLabel>
+        </div>
+      </Statistic>
+      <Statistic
+        color="orange"
+      >
+        <div
+          className="ui orange statistic"
+        >
+          <StatisticValue>
+            <div
+              className="value"
+            >
+              1
+            </div>
+          </StatisticValue>
+          <StatisticLabel>
+            <div
+              className="label"
+            >
+              Following
+            </div>
+          </StatisticLabel>
+        </div>
+      </Statistic>
+      <Statistic
+        color="yellow"
+      >
+        <div
+          className="ui yellow statistic"
+        >
+          <StatisticValue>
+            <div
+              className="value"
+            >
+              1
+            </div>
+          </StatisticValue>
+          <StatisticLabel>
+            <div
+              className="label"
+            >
+              Appreciations
+            </div>
+          </StatisticLabel>
+        </div>
+      </Statistic>
+      <Statistic
+        color="green"
+      >
+        <div
+          className="ui green statistic"
+        >
+          <StatisticValue>
+            <div
+              className="value"
+            >
+              1
+            </div>
+          </StatisticValue>
+          <StatisticLabel>
+            <div
+              className="label"
+            >
+              Views
+            </div>
+          </StatisticLabel>
+        </div>
+      </Statistic>
+      <Statistic
+        color="teal"
+      >
+        <div
+          className="ui teal statistic"
+        >
+          <StatisticValue>
+            <div
+              className="value"
+            >
+              1
+            </div>
+          </StatisticValue>
+          <StatisticLabel>
+            <div
+              className="label"
+            >
+              Comments
+            </div>
+          </StatisticLabel>
+        </div>
+      </Statistic>
+    </div>
+  </StatisticGroup>
+</UserStats>
 `;

@@ -4,9 +4,11 @@ import MockUser from "./mocks/mock.user";
 import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
 
-test("<UserProfileModal/> renders correctly", () => {
-  const component = mount(<UserProfileModal user={MockUser} />);
-  expect(component.props().user).toBe(MockUser);
-  expect(toJson(component)).toMatchSnapshot();
-  component.unmount();
+describe("<UserProfileModal />", () => {
+  it("renders correctly", () => {
+    const component = mount(<UserProfileModal user={MockUser} />);
+    expect(component.props().user).toBe(MockUser);
+    expect(toJson(component)).toMatchSnapshot();
+    component.unmount();
+  });
 });

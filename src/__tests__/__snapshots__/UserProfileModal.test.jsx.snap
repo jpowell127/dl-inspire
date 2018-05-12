@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<UserProfileModal/> renders correctly 1`] = `
+exports[`<UserProfileModal /> renders correctly 1`] = `
 <UserProfileModal
   user={
     Object {

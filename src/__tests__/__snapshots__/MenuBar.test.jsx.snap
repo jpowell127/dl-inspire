@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MenuBar renders correctly 1`] = `
+exports[`<MenuBar /> renders correctly 1`] = `
 <Menu
   inverted={true}
   size="small"
@@ -24,8 +24,8 @@ exports[`MenuBar renders correctly 1`] = `
   >
     <MenuItem>
       <Search
-        getUsers={[Function]}
-        handleSearchTermChange={[Function]}
+        getUsers={[MockFunction]}
+        handleSearchTermChange={[MockFunction]}
       />
     </MenuItem>
   </MenuMenu>
