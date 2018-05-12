@@ -1,16 +1,14 @@
 import React from "react";
 import Search from "../components/Search";
-import { mount, shallow } from "enzyme";
+import SearchProps from "./mocks/mock.searchProps";
+import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
 
-const props = {
-  getUsers: jest.fn(),
-  handleSearchTermChange: jest.fn()
-};
+const props = SearchProps;
 
 describe("<Search />", () => {
   it("renders correctly", () => {
-    const component = shallow(<Search {...props} />);
+    const component = mount(<Search {...props} />);
     expect(toJson(component)).toMatchSnapshot();
   });
   it("it calls getUsers when search button is clicked", () => {

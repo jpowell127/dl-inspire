@@ -1,18 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Search /> renders correctly 1`] = `
-<Input
-  action={
-    Object {
-      "color": "pink",
-      "icon": "search",
-      "onClick": [MockFunction],
+<Search
+  getUsers={[MockFunction]}
+  handleSearchTermChange={[MockFunction]}
+  onKeyPress={[MockFunction]}
+>
+  <Input
+    action={
+      Object {
+        "color": "pink",
+        "icon": "search",
+        "onClick": [MockFunction],
+      }
     }
-  }
-  inverted={true}
-  onChange={[MockFunction]}
-  placeholder="Search Behance"
-  size="large"
-  type="text"
-/>
+    inverted={true}
+    onChange={[MockFunction]}
+    onKeyPress={[MockFunction]}
+    placeholder="Search Behance"
+    size="large"
+    type="text"
+  >
+    <div
+      className="ui large inverted action input"
+    >
+      <input
+        key="text"
+        onChange={[Function]}
+        onKeyPress={[MockFunction]}
+        placeholder="Search Behance"
+        type="text"
+      />
+      <Button
+        as="button"
+        color="pink"
+        icon="search"
+        onClick={[MockFunction]}
+        role="button"
+      >
+        <button
+          className="ui pink icon button"
+          onClick={[Function]}
+          role="button"
+        >
+          <Icon
+            as="i"
+            key="search"
+            name="search"
+          >
+            <i
+              aria-hidden="true"
+              className="search icon"
+            />
+          </Icon>
+        </button>
+      </Button>
+    </div>
+  </Input>
+</Search>
 `;

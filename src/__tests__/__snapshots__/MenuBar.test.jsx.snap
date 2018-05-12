@@ -26,6 +26,7 @@ exports[`<MenuBar /> renders correctly 1`] = `
       <Search
         getUsers={[MockFunction]}
         handleSearchTermChange={[MockFunction]}
+        onKeyPress={[MockFunction]}
       />
     </MenuItem>
   </MenuMenu>
