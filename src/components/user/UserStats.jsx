@@ -9,7 +9,7 @@ export default function UserStats({ stats }) {
     <Statistic.Group size="mini" widths="five">
       <Statistic color="red">
         <Statistic.Value>{followers}</Statistic.Value>
-        <Statistic.Label size="mini">Followers</Statistic.Label>
+        <Statistic.Label>Followers</Statistic.Label>
       </Statistic>
       <Statistic color="orange">
         <Statistic.Value>{following}</Statistic.Value>

@@ -32,12 +32,9 @@ exports[`<UserStats /> renders correctly 1`] = `
               1
             </div>
           </StatisticValue>
-          <StatisticLabel
-            size="mini"
-          >
+          <StatisticLabel>
             <div
               className="label"
-              size="mini"
             >
               Followers
             </div>
