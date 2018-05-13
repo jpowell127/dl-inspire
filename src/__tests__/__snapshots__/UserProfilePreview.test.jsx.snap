@@ -4,30 +4,38 @@ exports[`<UserProfilePreview /> renders correctly 1`] = `
 <UserProfilePreview
   user={
     Object {
-      "city": "",
+      "city": "Buenos Aires",
       "company": "",
-      "country": "",
-      "created_on": 0,
-      "display_name": "",
-      "fields": Array [],
-      "first_name": "",
-      "has_default_image": 0,
-      "id": 12345,
-      "images": Object {},
-      "last_name": "",
-      "location": "",
+      "country": "Argentina",
+      "created_on": 1279082706,
+      "display_name": "Matias Chilo",
+      "fields": Array [
+        "Design",
+        "Editorial Design",
+        "Graphic Design",
+      ],
+      "first_name": "Matias",
+      "id": 193936,
+      "images": Object {
+        "115": "http://behance.vo.llnwd.net/profiles4/193936/115x4463cd4adf137aa218b15657eaa568b1.jpg",
+        "129": "http://behance.vo.llnwd.net/profiles4/193936/129x4463cd4adf137aa218b15657eaa568b1.jpg",
+        "138": "http://behance.vo.llnwd.net/profiles4/193936/4463cd4adf137aa218b15657eaa568b1.jpg",
+        "32": "http://behance.vo.llnwd.net/profiles4/193936/32x4463cd4adf137aa218b15657eaa568b1.jpg",
+        "50": "http://behance.vo.llnwd.net/profiles4/193936/50x4463cd4adf137aa218b15657eaa568b1.jpg",
+        "78": "http://behance.vo.llnwd.net/profiles4/193936/78x4463cd4adf137aa218b15657eaa568b1.jpg",
+      },
+      "last_name": "Chilo",
       "occupation": "",
       "state": "",
       "stats": Object {
-        "appreciations": 0,
-        "comments": 0,
-        "followers": 0,
-        "following": 0,
-        "views": 0,
+        "appreciations": 1,
+        "comments": 1,
+        "followers": 1,
+        "following": 1,
+        "views": 1,
       },
-      "url": "",
-      "username": "",
-      "website": "",
+      "url": "http://www.behance.net/vanth",
+      "username": "vanth",
     }
   }
 >
@@ -43,26 +51,32 @@ exports[`<UserProfilePreview /> renders correctly 1`] = `
           className="content"
         >
           <Image
-            alt="Image of "
+            alt="Image of vanth"
             as="img"
             floated="right"
             size="mini"
+            src="http://behance.vo.llnwd.net/profiles4/193936/50x4463cd4adf137aa218b15657eaa568b1.jpg"
             ui={true}
           >
             <img
-              alt="Image of "
+              alt="Image of vanth"
               className="ui mini right floated image"
+              src="http://behance.vo.llnwd.net/profiles4/193936/50x4463cd4adf137aa218b15657eaa568b1.jpg"
             />
           </Image>
           <CardHeader>
             <div
               className="header"
-            />
+            >
+              Matias Chilo
+            </div>
           </CardHeader>
           <CardMeta>
             <div
               className="meta"
-            />
+            >
+              vanth
+            </div>
           </CardMeta>
         </div>
       </CardContent>
@@ -75,30 +89,38 @@ exports[`<UserProfilePreview /> renders correctly 1`] = `
           <UserProfileModal
             user={
               Object {
-                "city": "",
+                "city": "Buenos Aires",
                 "company": "",
-                "country": "",
-                "created_on": 0,
-                "display_name": "",
-                "fields": Array [],
-                "first_name": "",
-                "has_default_image": 0,
-                "id": 12345,
-                "images": Object {},
-                "last_name": "",
-                "location": "",
+                "country": "Argentina",
+                "created_on": 1279082706,
+                "display_name": "Matias Chilo",
+                "fields": Array [
+                  "Design",
+                  "Editorial Design",
+                  "Graphic Design",
+                ],
+                "first_name": "Matias",
+                "id": 193936,
+                "images": Object {
+                  "115": "http://behance.vo.llnwd.net/profiles4/193936/115x4463cd4adf137aa218b15657eaa568b1.jpg",
+                  "129": "http://behance.vo.llnwd.net/profiles4/193936/129x4463cd4adf137aa218b15657eaa568b1.jpg",
+                  "138": "http://behance.vo.llnwd.net/profiles4/193936/4463cd4adf137aa218b15657eaa568b1.jpg",
+                  "32": "http://behance.vo.llnwd.net/profiles4/193936/32x4463cd4adf137aa218b15657eaa568b1.jpg",
+                  "50": "http://behance.vo.llnwd.net/profiles4/193936/50x4463cd4adf137aa218b15657eaa568b1.jpg",
+                  "78": "http://behance.vo.llnwd.net/profiles4/193936/78x4463cd4adf137aa218b15657eaa568b1.jpg",
+                },
+                "last_name": "Chilo",
                 "occupation": "",
                 "state": "",
                 "stats": Object {
-                  "appreciations": 0,
-                  "comments": 0,
-                  "followers": 0,
-                  "following": 0,
-                  "views": 0,
+                  "appreciations": 1,
+                  "comments": 1,
+                  "followers": 1,
+                  "following": 1,
+                  "views": 1,
                 },
-                "url": "",
-                "username": "",
-                "website": "",
+                "url": "http://www.behance.net/vanth",
+                "username": "vanth",
               }
             }
           >

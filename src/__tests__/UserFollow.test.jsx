@@ -19,5 +19,6 @@ describe("<UserFollow />", () => {
 
     expect(getUserFollowSpy).toHaveBeenCalledTimes(2);
     getUserFollowSpy.mockClear();
+    wrapper.unmount();
   });
 });

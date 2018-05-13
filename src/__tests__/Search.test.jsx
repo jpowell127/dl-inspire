@@ -18,6 +18,7 @@ describe("<Search />", () => {
       .simulate("change", { currentTarget: { value: "test" } });
     wrapper.find("button").simulate("click");
     expect(props.getUsers).toHaveBeenCalled();
+    wrapper.unmount();
   });
   it("it calls getUsers when enter button is pressed", () => {
     const wrapper = mount(<Search {...props} />);
@@ -26,5 +27,6 @@ describe("<Search />", () => {
       .simulate("change", { currentTarget: { value: "test" } });
     wrapper.find("button").simulate("keypress", { key: "Enter" });
     expect(props.getUsers).toHaveBeenCalled();
+    wrapper.unmount();
   });
 });

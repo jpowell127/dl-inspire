@@ -14,9 +14,11 @@ describe("<MenuBar />", () => {
   it("contains correct header text", () => {
     const wrapper = mount(<MenuBar {...props} />);
     expect(wrapper.find("div.content").text()).toBe("Search");
+    wrapper.unmount();
   });
   it("contains a search input", () => {
     const wrapper = mount(<MenuBar {...props} />);
     expect(wrapper.find("input").exists()).toBe(true);
+    wrapper.unmount();
   });
 });
