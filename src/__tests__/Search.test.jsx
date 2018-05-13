@@ -8,23 +8,23 @@ const props = SearchProps;
 
 describe("<Search />", () => {
   it("renders correctly", () => {
-    const component = mount(<Search {...props} />);
-    expect(toJson(component)).toMatchSnapshot();
+    const wrapper = mount(<Search {...props} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
   it("it calls getUsers when search button is clicked", () => {
-    const component = mount(<Search {...props} />);
-    component
+    const wrapper = mount(<Search {...props} />);
+    wrapper
       .find("input")
       .simulate("change", { currentTarget: { value: "test" } });
-    component.find("button").simulate("click");
+    wrapper.find("button").simulate("click");
     expect(props.getUsers).toHaveBeenCalled();
   });
   it("it calls getUsers when enter button is pressed", () => {
-    const component = mount(<Search {...props} />);
-    component
+    const wrapper = mount(<Search {...props} />);
+    wrapper
       .find("input")
       .simulate("change", { currentTarget: { value: "test" } });
-    component.find("button").simulate("keypress", { key: "Enter" });
+    wrapper.find("button").simulate("keypress", { key: "Enter" });
     expect(props.getUsers).toHaveBeenCalled();
   });
 });

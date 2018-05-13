@@ -6,7 +6,7 @@ import toJson from "enzyme-to-json";
 describe("<UserWorkExperience />", () => {
   it("renders correctly", () => {
     const username = "a-r-t-e-m";
-    const component = shallow(<UserWorkExperience username={username} />);
-    expect(component).toMatchSnapshot();
+    const wrapper = shallow(<UserWorkExperience username={username} />);
+    expect(wrapper).toMatchSnapshot();
   });
 });

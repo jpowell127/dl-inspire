@@ -8,15 +8,15 @@ const props = SearchProps;
 
 describe("<MenuBar />", () => {
   it("renders correctly", () => {
-    const component = shallow(<MenuBar {...props} />);
-    expect(toJson(component)).toMatchSnapshot();
+    const wrapper = shallow(<MenuBar {...props} />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
   it("contains correct header text", () => {
-    const component = mount(<MenuBar {...props} />);
-    expect(component.find("div.content").text()).toBe("Search");
+    const wrapper = mount(<MenuBar {...props} />);
+    expect(wrapper.find("div.content").text()).toBe("Search");
   });
   it("contains a search input", () => {
-    const component = mount(<MenuBar {...props} />);
-    expect(component.find("input").exists()).toBe(true);
+    const wrapper = mount(<MenuBar {...props} />);
+    expect(wrapper.find("input").exists()).toBe(true);
   });
 });

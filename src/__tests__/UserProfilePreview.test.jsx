@@ -6,9 +6,9 @@ import toJson from "enzyme-to-json";
 
 describe("<UserProfilePreview />", () => {
   it("renders correctly", () => {
-    const component = mount(<UserProfilePreview user={MockUser} />);
-    expect(component.props().user).toBe(MockUser);
-    expect(toJson(component)).toMatchSnapshot();
-    component.unmount();
+    const wrapper = mount(<UserProfilePreview user={MockUser} />);
+    expect(wrapper.props().user).toBe(MockUser);
+    expect(toJson(wrapper)).toMatchSnapshot();
+    wrapper.unmount();
   });
 });
