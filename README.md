@@ -37,6 +37,8 @@ node v8.11.1
 ## Installing and Running
 
 ```
+git clone https://github.com/jpowell127/dl-inspire.git
+cd dl-inspire
 npm i && npm start
 ```
 
